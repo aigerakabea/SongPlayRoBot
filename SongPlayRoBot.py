@@ -30,15 +30,16 @@ def time_to_seconds(time):
 ## Commands --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    TamilBots = f'👋 𝗛𝗲𝗹𝗹𝗼 @{message.from_user.username}\n\n𝗜 𝗔𝗺 🎸𝐒𝐨𝐧𝐠 𝐏𝐥𝐚𝐲 𝐁𝐨𝐭[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)\n\n𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗\n\n𝗧𝘆𝗽𝗲 /s 𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲\n\n𝐄𝐠. `/s Faded`'
+    TamilBots = f'👋 𝗛𝗲𝗹𝗹𝗼 @{message.from_user.username}\n\n𝗜 𝗔𝗺 PIGASUS MUSIC PLAYET 𝐁𝐨𝐭[🎶](https://telegra.ph/file/2f1dddc08e553492931fb.jpg)\n\n𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗\n\n𝗧𝘆𝗽𝗲 /s 𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲\n\n𝐄𝐠. `/s Faded`'
     message.reply_text(
         text=TamilBots, 
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝐒𝐔𝐏𝐏𝐎𝐑𝐓 👬', url='https://t.me/TamilSupport'),
-                    InlineKeyboardButton('𝐀𝐃𝐃 𝐌𝐄 🤗', url='https://t.me/SongProBot?startgroup=true')
+                    InlineKeyboardButton('UPDATE 👬', url='https://t.me/PigasusUpdates'),
+                    InlineKeyboardButton('𝐀𝐃𝐃 𝐌𝐄 🤗', url='http://t.me/pigasusmusicplayerbot?startgroup=true')
+                     InlineKeyboardButton( ' OWNER 🤗', url='https://t.me/Rohith_no_1')
                 ]
             ]
         )
@@ -88,7 +89,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://telegra.ph/file/67f41ae52a85dfc0551ae.mp4)")
+    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://telegra.ph/file/2f1dddc08e553492931fb.jpg)")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
